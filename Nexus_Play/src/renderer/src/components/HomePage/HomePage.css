@@ -1,0 +1,5 @@
+.homeParent {
+    border: 2px solid magenta;
+    flex-grow: 9;
+    padding: 0.5em 1em 0.5em 1em;
+}

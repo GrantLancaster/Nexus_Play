@@ -1,0 +1,15 @@
+.categoryParent {
+    margin-left: 2em;
+    border: 2px solid cyan;
+    flex-grow: 1;
+}
+ul{
+    padding: 0.5em 0 0.5em 0;
+}
+li {
+    margin-left: 1em;
+    width: fit-content;
+}
+li:hover {
+    color: mediumvioletred;
+}
