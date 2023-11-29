@@ -5,7 +5,7 @@ export default function Featured() {
     return(
         <>
         <h4>Featured and Recommended</h4>
-        <div className="featuredParent">
+        <div className="bg-blue-300">
             <div className="featuredGame">
                 <img src="" alt="game artwork"></img>
                 <div className="overlay">
