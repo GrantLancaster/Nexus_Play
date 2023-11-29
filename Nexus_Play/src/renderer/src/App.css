@@ -2,7 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --primary-color: #B191FF;
+    --secondary-color: #FF4081;
+    --background-color: #1c1c1c;
+}
+
 .mainPage {
-    Display: Flex;
+    display: Flex;
     margin-bottom: 1em;
+ }
+
+ .nav-background {
+    background-color: var(--background-color);
  }

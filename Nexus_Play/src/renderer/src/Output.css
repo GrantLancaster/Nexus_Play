@@ -534,22 +534,22 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-red-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-blue-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(147 197 253 / var(--tw-bg-opacity));
 }
 
+:root {
+  --primary-color: #B191FF;
+  --secondary-color: #FF4081;
+  --background-color: #1c1c1c;
+}
+
 .mainPage {
-  Display: Flex;
+  display: Flex;
   margin-bottom: 1em;
+}
+
+.nav-background {
+  background-color: var(--background-color);
 }

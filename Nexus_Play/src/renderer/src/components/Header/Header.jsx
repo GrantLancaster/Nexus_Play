@@ -2,7 +2,7 @@ import "./Header.css";
 
 export default function Header() {
     return (
-        <div className="headerBar">
+        <div className="nav-background">
             <img className="headerLogo" src="" alt="Nexus Play logo"></img>
             <ul className="buttonList">
                 <li><button className="headerButtons">Store</button></li>
