@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .mainPage {
     Display: Flex;
     margin-bottom: 1em;

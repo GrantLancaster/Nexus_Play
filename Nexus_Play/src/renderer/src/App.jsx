@@ -1,4 +1,4 @@
-import "./App.css";
+import "./Output.css"; 
 
 // REACT IMPORTST------------------------------
 

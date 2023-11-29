@@ -1,0 +1,13 @@
+.specialOfferParent {
+    display: flex;
+}
+.game {
+    position: relative;
+    height: 200px;
+    width: 25%;
+    border: 2px solid pink;
+}
+.gameSmall {
+    position: relative;
+    border: 2px solid pink;
+}
