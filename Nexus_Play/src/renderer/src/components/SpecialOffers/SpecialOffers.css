@@ -1,13 +1,59 @@
 .specialOfferParent {
     display: flex;
+    width: 100%;
+    margin-left: 1rem;
 }
 .game {
     position: relative;
-    height: 200px;
-    width: 25%;
-    border: 2px solid pink;
+    height: 33.333333%;
+    width: 100%;
+    margin: 0.5rem;
+    overflow: hidden;
 }
 .gameSmall {
     position: relative;
-    border: 2px solid pink;
+    width: 100%;
+    height: 50%;
+}
+.overlay {
+    border: 2px solid white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.overlay article {
+    float: right;
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+.overlay button {
+    position: absolute;
+    right: 0.5em;
+    bottom: 33%;
+}
+.overlaySale {
+    background: linear-gradient(0deg, rgba(0,0,0,.80) 60%, rgba(29,253,43,0.30) 90%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 2em 0.5em 0.5em 0.5em;
+}
+.overlaySale h4, .overlaySale p {
+    color: white;
+    font-weight: bold;
+    font-size: 10pt;
+}
+.overlaySale article {
+    float: right;
+    position: absolute;
+    bottom: 1rem;;
+    right: 1rem;
+}
+img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+
 }

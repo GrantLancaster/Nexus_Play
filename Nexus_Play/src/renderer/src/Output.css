@@ -534,14 +534,20 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-red-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+.absolute {
+  position: absolute;
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.left-0 {
+  left: 0px;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .bg-blue-300 {
@@ -549,7 +555,33 @@ video {
   background-color: rgb(147 197 253 / var(--tw-bg-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/*
+npx tailwindcss -i ./src/renderer/src/App.css -o ./src/renderer/src/Output.css --watch
+*/
+
+:root {
+  --primaryColor: #B191FF;
+  --secondaryColor: #FF4081;
+  --backgroundColor: #1c1c1c;
+}
+
 .mainPage {
   Display: Flex;
   margin-bottom: 1em;
+}
+
+.headerBG {
+  background-color: var(--backgroundColor);
+}
+
+.bodyParent{
+  background-color: var(--backgroundColor);
+  background-size: cover;
+  display: flex;
+  padding: 1em;
 }
