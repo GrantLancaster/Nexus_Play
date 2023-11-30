@@ -2,7 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+npx tailwindcss -i ./src/renderer/src/App.css -o ./src/renderer/src/Output.css --watch
+*/
+
+:root {
+    --primaryColor: #B191FF;
+    --secondaryColor: #FF4081;
+    --backgroundColor: #1c1c1c;
+}
+
 .mainPage {
     Display: Flex;
     margin-bottom: 1em;
+ }
+ .headerBG {
+    background-color: var(--backgroundColor);
+ }
+ .bodyParent{
+    background-color: var(--backgroundColor);
+    background-size: cover;
+    display: flex;
+    padding: 1em;
  }

@@ -9,18 +9,6 @@
     border: 2px solid gold;
     position: relative;
 }
-.overlay {
-    border: 2px solid white;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-.overlay button {
-    position: absolute;
-    right: 0.5em;
-    bottom: 33%;
-}
-
 .imageGrid {
     display: flex;
     flex-wrap: wrap;
