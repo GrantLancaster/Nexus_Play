@@ -1,28 +1,17 @@
 import "./Featured.css";
 
 export default function Featured() {
+
+    const col1Class = "rounded-lg bg-red-500 row-span-3";
+
+    const col2Class = "rounded-lg bg-black/70"
     
     return(
-        <>
-        <h4>Featured and Recommended</h4>
-        <div className="bg-blue-300">
-            <div className="featuredGame">
-                <img src="" alt="game artwork"></img>
-                <div className="overlay">
-                    <h4>Name of Game</h4>
-                    <p>Creator of game</p>
-                    <article>Price/Sale Price</article>
-                    <button>Click to View</button>
-                </div>
-            </div>
-
-            <div className="imageGrid">
-                <img src="" alt="Game 1"></img>
-                <img src="" alt="Game 2"></img>
-                <img src="" alt="Game 3"></img>
-                <img src="" alt="Game 4"></img>
-            </div>
+        <div className="grid grid-rows-3 grid-flow-col col-end-3 gap-6 w-4/5 h-featured">
+            <div className= { col1Class }>a</div>
+            <div className= { col2Class }>b</div>
+            <div className= { col2Class }>c</div>
+            <div className= { col2Class }>d</div>
         </div>
-        </>
     )
 }
