@@ -2,26 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-npx tailwindcss -i ./src/renderer/src/App.css -o ./src/renderer/src/Output.css --watch
-*/
-
 :root {
-    --primaryColor: #B191FF;
-    --secondaryColor: #FF4081;
-    --backgroundColor: #1c1c1c;
+    --primary-color: #B191FF;
+    --secondary-color: #FF4081;
+    --background-color: #1c1c1c;
+}
+
+html {
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: content-box;
+    position: absolute;
+    background-image: url("./assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.overlay {
+    background-color: #00000099;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+    border: none;
+}
+
+.p-primary {
+    padding: 40px;
+
 }
 
 .mainPage {
-    Display: Flex;
+    display: Flex;
     margin-bottom: 1em;
  }
- .headerBG {
-    background-color: var(--backgroundColor);
+
+
+ .nav-background {
+    background-color: var(--background-color);
  }
- .bodyParent{
-    background-color: var(--backgroundColor);
-    background-size: cover;
-    display: flex;
-    padding: 1em;
- }
+
+ /* Features Component */
+
+.h-featured {
+    height: 480px;
+}
