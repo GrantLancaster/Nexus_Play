@@ -1,3 +1,6 @@
+
+import "./App.css";
+
 // REACT IMPORTST------------------------------
 
 
@@ -7,9 +10,11 @@ import Header from "./components/Header/Header.jsx";
 // import HomePage from "./components/HomePage/HomePage.jsx";
 import Featured from "./components/Featured/Featured.jsx";
 import HomePage from "./components/HomePage/HomePage.jsx";
+import SpecialOffers from "./components/SpecialOffers/SpecialOffers.jsx";
 
 
 export default function App() {
+
   //Still need colors for the header buttons
   return (
     <>
@@ -17,6 +22,7 @@ export default function App() {
       <div className="overlay"></div>
 
       <HomePage />
+
     </>
     
   )

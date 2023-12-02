@@ -534,6 +534,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+
 .invisible {
   visibility: hidden;
 }
@@ -621,6 +622,7 @@ video {
 .bg-gray-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+
 }
 
 .bg-stone-500 {
@@ -710,10 +712,26 @@ body {
   padding: 40px;
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/*
+npx tailwindcss -i ./src/renderer/src/App.css -o ./src/renderer/src/Output.css --watch
+*/
+
+:root {
+  --primaryColor: #B191FF;
+  --secondaryColor: #FF4081;
+  --backgroundColor: #1c1c1c;
+}
+
 .mainPage {
   display: Flex;
   margin-bottom: 1em;
 }
+
 
 .nav-background {
   background-color: var(--background-color);
@@ -723,4 +741,12 @@ body {
 
 .h-featured {
   height: 480px;
+
+
+.bodyParent{
+  background-color: var(--backgroundColor);
+  background-size: cover;
+  display: flex;
+  padding: 1em;
+
 }

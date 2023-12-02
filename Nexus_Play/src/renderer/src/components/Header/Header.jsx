@@ -20,6 +20,7 @@ export default function Header() {
                 <li><button className= { navItemClass }>Library</button></li>
                 <li><button className= { navItemClass }>Community</button></li>
                 <li><button className= { navItemClass }>Profile</button></li>
+
             </ul>
             <div className="invisible">Pseudo div</div>
         </nav>

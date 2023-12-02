@@ -1,15 +1,19 @@
 .categoryParent {
-    margin-left: 2em;
-    border: 2px solid cyan;
-    flex-grow: 1;
+    color: lightgray;
+    background-color: var(--backgroundColor);
 }
 ul{
     padding: 0.5em 0 0.5em 0;
 }
+ul h4 {
+    font-weight: bold;
+}
 li {
     margin-left: 1em;
     width: fit-content;
+    color: var(--primaryColor);
+
 }
 li:hover {
-    color: mediumvioletred;
+    color: var(--secondaryColor);
 }

@@ -36,12 +36,14 @@ body {
 
 .p-primary {
     padding: 40px;
+
 }
 
 .mainPage {
     display: Flex;
     margin-bottom: 1em;
  }
+
 
  .nav-background {
     background-color: var(--background-color);
