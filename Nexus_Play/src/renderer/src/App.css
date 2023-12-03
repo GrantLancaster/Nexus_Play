@@ -16,9 +16,9 @@ html {
 
 body {
     box-sizing: content-box;
-    position: absolute;
     background-image: url("./assets/background.png");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -52,5 +52,10 @@ body {
  /* Features Component */
 
 .h-featured {
+    width: 1480px;
     height: 480px;
+}
+
+.grid-image {
+    width: 180px;
 }
