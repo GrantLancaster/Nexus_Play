@@ -21,8 +21,6 @@ const useFetchGames = () => {
         const data = await response.json();
         setGames(data.results);
 
-        // console.log(games);
-        
       } catch (error) {
         setError('Error fetching data');
         console.error('Error fetching data: ', error);

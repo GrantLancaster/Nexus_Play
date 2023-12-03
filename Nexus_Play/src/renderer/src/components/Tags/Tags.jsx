@@ -1,10 +1,9 @@
-import "./Tags.css";
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
-library.add( faCircle )
+library.add( faCircle, faStar )
 
 function Offertag() {
     return(
@@ -17,17 +16,31 @@ function Offertag() {
 
 function GenerateRandomPrice() {
 
-    const randomPrice = Math.random() * (99.99 - 20.00) + 20.00;
+    const priceInput = Math.random() * (99.99 - 20.00) + 20.00;
   
-    const formattedPrice = randomPrice.toFixed(2);
+    const priceOutput = priceInput.toFixed(2);
   
 
     return (
         // This will just return the value, always add this inside a parent element of it's own. Check the example in Featured.jsx
             <>
-                ${formattedPrice}
+                ${priceOutput}
             </>
             );
-  }
+}
 
-export { Offertag, GenerateRandomPrice }
+function Ratingtag() {
+
+    const ratingInput = Math.random() * 5;
+  
+    const ratingOutput = ratingInput.toFixed(2);
+
+    return(
+        <div className='text-amber-500'>
+            <FontAwesomeIcon icon="star" className='mr-1'/>
+            {ratingOutput}
+        </div>
+    )
+}
+
+export { Offertag, GenerateRandomPrice, Ratingtag }
