@@ -4,6 +4,8 @@ import useFetchGames from "../../Api";
 
 import { Offertag, GenerateRandomPrice, Ratingtag } from "../Tags/tags";
 
+import { Button } from "../Button";
+
 export default function Featured() {
 
     const { games, loading, error } = useFetchGames();
@@ -33,9 +35,7 @@ export default function Featured() {
                                 <Offertag />
                             </div>
                         </div>
-                        <button className="primary-button">
-                            Click to View
-                        </button>
+                        <Button label="Buy Now" className="primary-button py-3 px-4 rounded-md flex flex-row items-center text-2xl font-medium" icon="money-bill" />
                     </div>
                 </div>
             )}
