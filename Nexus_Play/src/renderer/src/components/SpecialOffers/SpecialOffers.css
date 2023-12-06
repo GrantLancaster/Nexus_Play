@@ -1,11 +1,12 @@
 .specialOfferParent {
     display: flex;
-    width: 100%;
-    margin-left: 1rem;
+    width: 90%;
+    margin: 1rem 0 1rem 1rem;
+    height: 480px;
 }
 .game {
     position: relative;
-    height: 33.333333%;
+    height: auto;
     width: 100%;
     margin: 0.5rem;
     overflow: hidden;
@@ -15,20 +16,20 @@
     width: 100%;
     height: 50%;
 }
-.overlay {
+.tileOverlay {
     border: 2px solid white;
     position: absolute;
     width: 100%;
     bottom: 0;
 }
-.overlay article {
+.tileOverlay article {
     float: right;
     display: block;
     position: absolute;
     bottom: 1rem;
     right: 1rem;
 }
-.overlay button {
+.tileOverlay button {
     position: absolute;
     right: 0.5em;
     bottom: 33%;
@@ -52,8 +53,7 @@
     right: 1rem;
 }
 img {
-width: 100%;
-height: 100%;
-object-fit: contain;
-
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

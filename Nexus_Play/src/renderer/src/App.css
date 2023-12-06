@@ -20,6 +20,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-attachment: fixed;
     width: 100vw;
     height: 100vh;
 }
@@ -32,6 +33,7 @@ body {
     margin: 0;
     z-index: -1;
     border: none;
+    position: fixed;
 }
 
 .feature-main {
@@ -40,7 +42,7 @@ body {
 }
 
 .p-primary {
-    padding: 40px;
+    padding: 3rem 0 3rem 3rem;
 
 }
 
@@ -61,6 +63,25 @@ body {
     height: 480px;
 }
 
+
+/* Categories Component */
+.categoryParent {
+    color: lightgray;
+}
+ul{
+    padding: 0.5em 0 0.5em 0;
+}
+ul h4 {
+    font-weight: bold;
+}
+li {
+    margin-left: 1em;
+    width: fit-content;
+    color: var(--primary-color);
+}
+li:hover {
+    color: var(--secondary-color);
+
 .grid-image {
     width: 180px;
 }
@@ -69,4 +90,5 @@ body {
 
 .primary-button {
     background-color: var(--primary-color);
+
 }
