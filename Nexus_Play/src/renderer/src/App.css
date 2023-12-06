@@ -81,7 +81,7 @@ li {
 }
 li:hover {
     color: var(--secondary-color);
-
+}
 .grid-image {
     width: 180px;
 }
