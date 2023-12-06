@@ -10,12 +10,10 @@ export default function HomePage() {
     return (
         <div>
             <Header />
-            <div className=" p-primary flex">
-                <Categories />
-                <div className='p-primary flex flex-col w-4/5'>
-                    <Featured />
-                    <SpecialOffers />
-                </div>
+            <div className='p-primary'>
+                {/* <Categories /> */}
+                <Featured className="h-featured"/>
+
             </div>
         </div>
     )
