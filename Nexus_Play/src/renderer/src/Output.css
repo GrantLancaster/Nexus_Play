@@ -696,6 +696,7 @@ video {
   --tw-gradient-from-position: 40%;
 }
 
+
 .p-0 {
   padding: 0px;
 }
@@ -829,6 +830,7 @@ body {
 .p-primary {
   width: 100%;
   padding: 2em;
+
 }
 
 .mainPage {
@@ -881,4 +883,6 @@ li:hover {
 
 .primary-button {
   background-color: var(--primary-color);
+
 }
+
