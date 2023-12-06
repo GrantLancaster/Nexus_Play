@@ -49,10 +49,10 @@ export default function Featured() {
                         <div className="flex flex-col justify-between h-fit ml-5 w-full">
                             <h2 className="text-2xl font-semibold mb-4">{game.name}</h2>
                             <div className="flex flex-row items-center justify-between">
+                                <Offertag />
                                 <div className="text-xl text-green-400 font-semibold">
                                     <GenerateRandomPrice />
                                 </div>
-                                <Offertag />
                             </div>
                         </div>
                     </div>
