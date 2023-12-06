@@ -32,3 +32,6 @@ $ npm run build:mac
 # For Linux
 $ npm run build:linux
 ```
+
+### WindCommand
+npx tailwindcss -i ./src/renderer/src/App.css -o ./src/renderer/src/Output.css --watch
