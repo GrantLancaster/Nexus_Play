@@ -16,9 +16,9 @@ html {
 
 body {
     box-sizing: content-box;
-    position: absolute;
     background-image: url("./assets/background.png");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -26,12 +26,17 @@ body {
 
 .overlay {
     background-color: #00000099;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
     z-index: -1;
     border: none;
+}
+
+.feature-main {
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .p-primary {
@@ -52,5 +57,16 @@ body {
  /* Features Component */
 
 .h-featured {
+    width: 1480px;
     height: 480px;
+}
+
+.grid-image {
+    width: 180px;
+}
+
+/* Buttons */
+
+.primary-button {
+    background-color: var(--primary-color);
 }

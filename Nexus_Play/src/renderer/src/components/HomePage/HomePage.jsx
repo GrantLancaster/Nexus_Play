@@ -11,7 +11,7 @@ export default function HomePage() {
             <Header />
             <div className='p-primary'>
                 {/* <Categories /> */}
-                <Featured />
+                <Featured className="h-featured"/>
             </div>
         </div>
     )
