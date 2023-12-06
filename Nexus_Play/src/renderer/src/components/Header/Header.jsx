@@ -4,7 +4,7 @@ export default function Header() {
 
     // Tailwind and CSS Class Declarations
 
-    const navClass = 'm-0 py-4 px-10 nav-background flex flex-row items-center justify-between';
+    const navClass = 'm-0 py-4 px-10 nav-background flex flex-row items-center justify-between sticky top-0';
 
     const logoClass = 'w-48';
 
