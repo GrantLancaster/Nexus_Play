@@ -6,6 +6,7 @@
     --primary-color: #B191FF;
     --secondary-color: #FF4081;
     --background-color: #1c1c1c;
+    
 }
 
 html {
@@ -40,8 +41,8 @@ body {
 }
 
 .p-primary {
-    padding: 40px;
-
+    padding: 2em;
+    width: 100%;
 }
 
 .mainPage {
@@ -57,7 +58,7 @@ body {
  /* Features Component */
 
 .h-featured {
-    width: 1480px;
+    width: 90%;
     height: 480px;
 }
 
@@ -69,4 +70,25 @@ body {
 
 .primary-button {
     background-color: var(--primary-color);
+}
+
+/* Categories */
+
+.categoryParent {
+    color: lightgray;
+    background-color: var(--backgroundColor);
+}
+.listParent {
+    padding: 0.5em 0 0.5em 0;
+}
+.listParent h4 {
+    font-weight: bold;
+}
+li {
+    width: fit-content;
+    color: var(--primaryColor);
+
+}
+li:hover {
+    color: var(--secondaryColor);
 }
