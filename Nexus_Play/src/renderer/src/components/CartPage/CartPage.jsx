@@ -73,7 +73,7 @@ export default function CartPage() {
                             </div>
                         </div>
                     ))}
-                    <Button className="wishlist-button w-fit py-2 px-4 rounded-md my-4 ml-4" icon={['fas', 'cart-plus']} label="Add more games" />
+                    <Button className="wishlist-button flex flex-row items-center w-fit py-2 px-4 rounded-md my-4 ml-4" icon={['fas', 'cart-plus']} label="Add more games" />
                 </div>
                 <div className="flex flex-col w-5/12 h-2/3 pl-8">
                     <h3 className="text-2xl font-semibold py-2">Order Summary</h3>
@@ -102,8 +102,8 @@ export default function CartPage() {
                         </div>
                     </form>
                     <div className="flex flex-row my-6">
-                        <Button className="payment-button w-fit py-2 px-4 rounded-md mr-4" icon={['fas', 'gift']} label="Buying as a Gift" />
-                        <Button className="payment-button w-fit py-2 px-4 rounded-md" icon={['far', 'credit-card']} label="Continue to Payment" />
+                        <Button className="payment-button flex flex-row items-center w-fit py-2 px-4 rounded-md mr-4" icon={['fas', 'gift']} label="Buying as a Gift" />
+                        <Button className="payment-button flex flex-row items-center w-fit py-2 px-4 rounded-md" icon={['far', 'credit-card']} label="Continue to Payment" />
                     </div>
                 </div>
            </div>
