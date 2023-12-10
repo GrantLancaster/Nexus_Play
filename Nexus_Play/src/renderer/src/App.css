@@ -6,6 +6,9 @@
     --primary-color: #B191FF;
     --secondary-color: #FF4081;
     --background-color: #1c1c1c;
+    --wishlist-color: #2350C3;
+    --remove-color: #C02323;
+    --payment-color: #59C305;
 }
 
 html {
@@ -52,9 +55,19 @@ body {
     margin-bottom: 1em;
  }
 
+ .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 
- .nav-background {
+ .background {
     background-color: var(--background-color);
+ }
+
+ .text-secondary {
+    color: var(--secondary-color);
  }
 
  /* Features Component */
@@ -86,7 +99,7 @@ li:hover {
 
 }
 .grid-image {
-    width: 180px;
+    width: 230px;
 }
 
 /* Buttons */
@@ -94,4 +107,22 @@ li:hover {
 .primary-button {
     background-color: var(--primary-color);
 
+}
+
+.wishlist-button {
+    background-color: var(--wishlist-color);
+}
+
+.remove-button {
+    background-color: var(--remove-color);
+}
+
+.payment-button {
+    background-color: var(--payment-color);
+}
+
+/* Cart Page */
+
+.cart-image {
+    width: 200px;
 }
