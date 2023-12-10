@@ -24,7 +24,7 @@ export default function Featured() {
     const col2Class = "rounded-lg bg-black/70 text-white flex flex-row items-center px-5 col-span-2";
     
     return(
-        <div className="grid grid-cols-5 grid-flow-col col-end-3 gap-6 h-featured feature-main">
+        <div className="grid grid-cols-5 grid-flow-col col-end-3 gap-6 h-featured feature-main w-full">
             {loading && <p>Loading...</p>}
             {error && <p>{error}</p>}
 

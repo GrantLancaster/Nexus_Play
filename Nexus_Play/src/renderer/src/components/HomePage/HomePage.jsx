@@ -11,7 +11,10 @@ export default function HomePage() {
         <div>
             <div className='p-primary flex flex-row justify-between'>
                 <Categories />
-                <Featured />
+                <div className="flex flex-col">
+                    <Featured />
+                    <SpecialOffers />
+                </div>
             </div>
         </div>
     )
