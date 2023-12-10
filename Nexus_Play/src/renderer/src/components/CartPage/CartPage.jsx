@@ -66,9 +66,9 @@ export default function CartPage() {
                             <div className="flex flex-col justify-evenly">
                                 {/* If you want regular icons and not fill icons, use the below syntax */}
 
-                                <Button className="wishlist-button py-2 px-3 rounded text-sm text-left" icon={['far', 'heart']} label="Move to Wishlist" />
+                                <Button className="wishlist-button flex flex-row items-center py-2 px-3 rounded text-sm text-left" icon={['far', 'heart']} label="Move to Wishlist" />
 
-                                <Button className="remove-button py-2 px-3 rounded text-sm text-left" icon={['far', 'circle-xmark']} label="Remove"/>
+                                <Button className="remove-button flex flex-row items-center py-2 px-3 rounded text-sm text-left" icon={['far', 'circle-xmark']} label="Remove"/>
 
                             </div>
                         </div>
@@ -109,5 +109,4 @@ export default function CartPage() {
            </div>
         </div>
     )
-
 }
