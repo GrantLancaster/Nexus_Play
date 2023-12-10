@@ -3,6 +3,8 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
+import { useState, useEffect } from 'react';
+
 library.add( faCircle, faStar )
 
 function Offertag() {
@@ -43,4 +45,18 @@ function Ratingtag() {
     )
 }
 
-export { Offertag, GenerateRandomPrice, Ratingtag }
+function StrikedPrice() {
+
+    const strikedInput = Math.random() * (99.99 - 20.00) + 20.00;
+
+    const strikedOutput = strikedInput.toFixed(2);
+
+    return (
+        <>
+            <s className='text-stone-500'>${strikedOutput}</s>
+        </>
+    )
+
+}
+
+export { Offertag, GenerateRandomPrice, Ratingtag, StrikedPrice }
