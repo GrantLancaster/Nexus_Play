@@ -1,6 +1,13 @@
 .GenreParent{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em 0em 0.5em 0em;
+}
+
+.img{
+width: 268px;
+height: 268px;
+flex-shrink: 0;
+margin-bottom: 10px;
 }
