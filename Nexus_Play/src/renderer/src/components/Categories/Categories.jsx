@@ -3,7 +3,7 @@ import "./Categories.css";
 export default function Categories() {
 
     return (
-        <div className="categoryParent">
+        <div className="categoryParent pr-24">
             <ul className="listParent">
                 <h4>Recommended</h4>
                 <li>By Friends</li>
