@@ -1,14 +1,13 @@
 .categoryParent {
     color: lightgray;
 }
-ul{
+.listParent {
     padding: 0.5em 0 0.5em 0;
 }
-ul h4 {
+.listParent h4 {
     font-weight: bold;
 }
 li {
-    margin-left: 1em;
     width: fit-content;
     color: var(--primaryColor);
 

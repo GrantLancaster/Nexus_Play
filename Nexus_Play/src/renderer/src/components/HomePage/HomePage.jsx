@@ -9,13 +9,12 @@ import SpecialOffers from "../SpecialOffers/SpecialOffers.jsx";
 export default function HomePage() {
     return (
         <div>
-            <div className='p-primary flex flex-row justify-center'>
+            <div className='p-primary flex flex-row justify-between'>
                 <Categories />
-                <div className="m-0 p-0 w-full">
-                    <Featured className="h-featured"/>
+                <div className="flex flex-col w-88">
+                    <Featured />
                     <SpecialOffers />
                 </div>
-
             </div>
         </div>
     )
