@@ -1045,27 +1045,3 @@ li:hover {
 .cart-image {
   width: 200px;
 }
-
-/* Categories */
-
-.categoryParent {
-  color: lightgray;
-}
-
-.listParent {
-  padding: 0.5em 0 0.5em 0;
-}
-
-.listParent h4 {
-  font-weight: bold;
-}
-
-li {
-  width: -moz-fit-content;
-  width: fit-content;
-  color: var(--primaryColor);
-}
-
-li:hover {
-  color: var(--secondaryColor);
-}

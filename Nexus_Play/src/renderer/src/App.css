@@ -76,7 +76,6 @@ body {
  /* Features Component */
 
 .h-featured {
-    width: 100%;
     width: 90%;
     height: 480px;
 }
@@ -103,7 +102,6 @@ li:hover {
 
 }
 .grid-image {
-    width: 230px;
     width: 300px;
 }
 
@@ -130,24 +128,4 @@ li:hover {
 
 .cart-image {
     width: 200px;
-}
-
-/* Categories */
-
-.categoryParent {
-    color: lightgray;
-}
-.listParent {
-    padding: 0.5em 0 0.5em 0;
-}
-.listParent h4 {
-    font-weight: bold;
-}
-li {
-    width: fit-content;
-    color: var(--primaryColor);
-
-}
-li:hover {
-    color: var(--secondaryColor);
 }
