@@ -645,6 +645,10 @@ video {
   height: 100%;
 }
 
+.w-0 {
+  width: 0px;
+}
+
 .w-1\/5 {
   width: 20%;
 }
@@ -766,6 +770,10 @@ video {
 
 .from-40\% {
   --tw-gradient-from-position: 40%;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .p-4 {
