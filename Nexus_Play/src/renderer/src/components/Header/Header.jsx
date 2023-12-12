@@ -4,20 +4,10 @@ import HomePage from '../HomePage/HomePage';
 
 import CartPage from '../CartPage/CartPage';
 
-export default function Header({Page, UpdatePage}) {
+import { Link } from 'wouter';
 
-    function storeHome() {
-        Page = <HomePage />
+export default function Header() {
 
-        UpdatePage(Page);
-
-    }
-
-    function cartPage() {
-        Page = <CartPage />
-
-        UpdatePage(Page);
-    }
 
     // Tailwind and CSS Class Declarations
 
@@ -33,10 +23,10 @@ export default function Header({Page, UpdatePage}) {
         <nav className= { navClass }>
             <img className= { logoClass } src= { Logo } alt="Nexus Play logo" />
             <ul className={ navButtons }>
-                <li><button className= { navItemClass } onClick={storeHome}>Store</button></li>
-                <li><button className= { navItemClass } onClick={cartPage}>Library</button></li>
-                <li><button className= { navItemClass }>Community</button></li>
-                <li><button className= { navItemClass }>Profile</button></li>
+                <li><Link href="/home" className= { navItemClass }>Store</Link></li>
+                <li><Link href="/cart" className= { navItemClass }>Library</Link></li>
+                <li><a className= { navItemClass }>Community</a></li>
+                <li><a className= { navItemClass }>Profile</a></li>
 
             </ul>
             <div className="invisible">Pseudo div</div>

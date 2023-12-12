@@ -27,7 +27,8 @@
     "crypto-js": "^4.2.0",
     "electron-updater": "^6.1.1",
     "oauth-1.0a": "^2.2.6",
-    "react-router-dom": "^6.20.0"
+    "react-router-dom": "^6.20.0",
+    "wouter": "^2.12.1"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config": "^1.0.1",
