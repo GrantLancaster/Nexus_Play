@@ -56,11 +56,23 @@ overflow: hidden;
 }
 
 .background {
-background-color: var(--background-color);
+    background-color: var(--background-color);
+}
+
+.primary-background {
+    background-color: var(--primary-color);
+}
+
+.secondary-background {
+    background-color: var(--secondary-color);
 }
 
 .text-secondary {
-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
 }
 
 /* Features Component */
@@ -118,6 +130,12 @@ background-color: var(--payment-color);
 
 .cart-image {
 width: 200px;
+}
+
+/* Paymennt Page */
+
+.payment-image {
+    width: 150px;
 }
 
 /* Custom Widths */

@@ -25,7 +25,7 @@ export default function Header() {
             <ul className={ navButtons }>
                 <li><Link href="/home" className= { navItemClass }>Store</Link></li>
                 <li><Link href="/cart" className= { navItemClass }>Library</Link></li>
-                <li><a className= { navItemClass }>Community</a></li>
+                <li><Link href="/payments" className= { navItemClass }>Community</Link></li>
                 <li><a className= { navItemClass }>Profile</a></li>
 
             </ul>
