@@ -130,7 +130,7 @@ export default function PaymentPage() {
                                 <CheckBox id="refund" name="refund" label={<>Remember my Payment Details for future purchases</>} />
                             </div>
                         </div>
-                        <Button className="payment-button flex flex-row items-center w-fit py-2 px-4 rounded-md my-4" icon={['fas', 'cart-plus']} label="Confirm Purchase" />
+                        <Button className="payment-button flex flex-row items-center w-fit py-2 px-4 rounded-md my-4" icon={['fas', 'cart-plus']} label="Confirm Purchase" navigation="/paymentSuccess" />
                     </form>
                 </div>
                 <div className="flex flex-col w-5/12 h-2/3 pl-8">
