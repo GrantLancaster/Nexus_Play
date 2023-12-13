@@ -28,6 +28,7 @@ export default function App() {
       <div className="overlay"></div>
       <Header />
       <Switch>
+        <Route path="/" component={HomePage} />
         <Route path="/home" component={HomePage} />
         <Route path="/cart" component={CartPage} />
         <Route path="/payments" component={PaymentPage} />
