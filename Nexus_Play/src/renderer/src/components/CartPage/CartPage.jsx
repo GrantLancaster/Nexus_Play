@@ -1,10 +1,10 @@
-
-
 import useFetchGames from "../../Api";
 
 import { Button } from "../Button";
 
 import { GenerateRandomPrice, Ratingtag, StrikedPrice } from "../Tags/tags";
+
+import { TextField } from "../InputFields/InputFields";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 
@@ -44,8 +44,8 @@ export default function CartPage() {
             <div className="w-full background px-6 py-4 rounded-lg text-secondary">
                 Store &gt; Multiplayer Games &gt; Cart
             </div>
-           <div className="flex flex-row items-center justify-between">
-                <div className="flex flex-col pt-4 w-7/12">
+           <div className="flex flex-row items-start justify-between pt-8">
+                <div className="flex flex-col w-7/12">
                     <h2 className="text-4xl font-semibold mb-6">
                         Shopping Cart
                     </h2>
@@ -97,7 +97,7 @@ export default function CartPage() {
                     <form className="flex flex-col w-fit">
                         <label className="my-3">Enter Promo Code:</label>
                         <div className="flex flex-row items-center">
-                            <input id="promo" type="text" className="background py-2 px-4 rounded-md border-2 border-pink-800 mr-4" placeholder="XYZ1234" />
+                            <TextField id="promo" className="background py-2 px-4 rounded-md border-2 border-pink-800 mr-4" placeholder="XYZ1234" />
                             <Button className="primary-button w-fit py-2 px-4 rounded-md" icon={['fas', 'tag']} label="Apply" />   
                         </div>
                     </form>

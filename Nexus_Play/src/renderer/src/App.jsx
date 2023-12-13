@@ -1,6 +1,8 @@
 
 import "./App.css";
 
+import { Switch, Route } from 'wouter';
+
 // REACT IMPORTST------------------------------
 
 
@@ -10,6 +12,8 @@ import Header from "./components/Header/Header.jsx";
 // import HomePage from "./components/HomePage/HomePage.jsx";
 import Featured from "./components/Featured/Featured.jsx";
 import HomePage from "./components/HomePage/HomePage.jsx";
+import CartPage from "./components/CartPage/CartPage.jsx";
+import PaymentPage from "./components/PaymentPage/PaymentPage.jsx";
 import SpecialOffers from "./components/SpecialOffers/SpecialOffers.jsx";
 import { useState, useEffect } from "react";
 
@@ -22,8 +26,12 @@ export default function App() {
     <>
       {/* Background Overlay */}
       <div className="overlay"></div>
-      <Header Page={Page} UpdatePage={UpdatePage} />
-      {Page}
+      <Header />
+      <Switch>
+        <Route path="/home" component={HomePage} />
+        <Route path="/cart" component={CartPage} />
+        <Route path="/payments" component={PaymentPage} />
+      </Switch>
     </>
     
   )
