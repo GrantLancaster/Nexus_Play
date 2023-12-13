@@ -4,7 +4,10 @@ import Featured from "../Featured/Featured.jsx";
 import Categories from "../Categories/Categories.jsx";
 import SpecialOffers from "../SpecialOffers/SpecialOffers.jsx";
 import Genre from "../Genre/Genre.jsx";
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 // import SpecialOffers from "../SpecialOffers/SpecialOffers.jsx";
 
 

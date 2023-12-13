@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .GenreParent{
     display: flex;
     flex-direction: column;
@@ -11,3 +12,27 @@ height: 268px;
 flex-shrink: 0;
 margin-bottom: 10px;
 }
+=======
+
+  
+  .Genre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .Genre img {
+    width: 268px;
+    height: 268px;
+    margin-bottom: 34px;
+    border-radius: 8px; /* Add rounded corners for images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  background-image: url(../../assets/Genre_img/Genre1.png);
+  background-image: url(../../assets/Genre_img/Genre2.png);
+  background-image: url(../../assets/Genre_img/Genre3.png);
+  background-image: url(../../assets/Genre_img/Genre4.png);
+  background-image: url(../../assets/Genre_img/Genre5.png);
+  background-image: url(../../assets/Genre_img/Genre6.png);
+}
+>>>>>>> Stashed changes
