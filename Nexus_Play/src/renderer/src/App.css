@@ -110,20 +110,23 @@ width: 300px;
 /* Buttons */
 
 .primary-button {
-background-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
 
+.secondary-button {
+    background-color: var(--secondary-color);
 }
 
 .wishlist-button {
-background-color: var(--wishlist-color);
+    background-color: var(--wishlist-color);
 }
 
 .remove-button {
-background-color: var(--remove-color);
+    background-color: var(--remove-color);
 }
 
 .payment-button {
-background-color: var(--payment-color);
+    background-color: var(--payment-color);
 }
 
 /* Cart Page */
