@@ -102,8 +102,8 @@ export default function CartPage() {
                         </div>
                     </form>
                     <div className="flex flex-row my-6">
-                        <Button className="payment-button flex flex-row items-center w-fit py-2 px-4 rounded-md mr-4" icon={['fas', 'gift']} label="Buying as a Gift" />
-                        <Button className="payment-button flex flex-row items-center w-fit py-2 px-4 rounded-md" icon={['far', 'credit-card']} label="Continue to Payment" />
+                        <Button className="payment-button flex flex-row items-center w-fit py-2 px-4 rounded-md mr-4" icon={['fas', 'gift']} label="Buying as a Gift" navigation="/payments" />
+                        <Button className="payment-button flex flex-row items-center w-fit py-2 px-4 rounded-md" icon={['far', 'credit-card']} label="Continue to Payment" navigation="/payments" />
                     </div>
                 </div>
            </div>

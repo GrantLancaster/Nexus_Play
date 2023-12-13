@@ -4,7 +4,7 @@ import { Button } from "../Button";
 
 import { GenerateRandomPrice, Ratingtag, StrikedPrice } from "../Tags/tags";
 
-import { TextField, DropDown } from "../InputFields/InputFields";
+import { TextField, DropDown, CheckBox } from "../InputFields/InputFields";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -46,28 +46,92 @@ export default function PaymentPage() {
                 Store &gt; Multiplayer Games &gt; Cart &gt; Payment Details
             </div>
             <div className="flex flex-row items-start justify-between pt-8">
-                <div className="flex flex-col w-7/12">
-                    <h2 className="text-4xl font-semibold mb-6">
+                <div className="flex flex-col w-3/5">
+                    <h2 className="text-4xl font-semibold">
                         Payment & Billing
                     </h2>
-                    <form>
+                    <form className="w-full">
                         <div>
-                            <h2 className="mb-4 text-xl font-semibold">Please select a Payment Method</h2>
-                            <div className="flex flex-row">
-                                <DropDown />
-                                <div className="flex flex-row text-primary text-4xl ml-4 justify-between w-1/3">
-                                    <FontAwesomeIcon icon={['fab', 'cc-paypal']} />
-                                    <FontAwesomeIcon icon={['fab', 'cc-visa']} />
-                                    <FontAwesomeIcon icon={['fab', 'cc-mastercard']} />
-                                    <FontAwesomeIcon icon={['fab', 'cc-amex']} />
-                                    <FontAwesomeIcon icon={['fab', 'cc-discover']} />
+                            <h3 className="text-2xl font-semibold my-6">
+                                Payment Details
+                            </h3>
+                            <div>
+                                <h2 className="mb-4 text-xl font-medium">Please select a Payment Method</h2>
+                                <div className="flex flex-row items-center">
+                                    <DropDown />
+                                    <div className="flex flex-row text-white text-3xl ml-4 justify-between w-1/4">
+                                        <FontAwesomeIcon icon={['fab', 'cc-paypal']} />
+                                        <FontAwesomeIcon icon={['fab', 'cc-visa']} />
+                                        <FontAwesomeIcon icon={['fab', 'cc-mastercard']} />
+                                        <FontAwesomeIcon icon={['fab', 'cc-amex']} />
+                                        <FontAwesomeIcon icon={['fab', 'cc-discover']} />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex flex-row justify-between w-2/3 my-6">
+                                <div className="flex flex-col">
+                                    <label htmlFor="card-number" className="text-lg mb-3">Card Number:<span className="text-red-500 font-bold ml-2">*</span></label>
+                                    <TextField id="card-number" className="background py-2 px-4 rounded-md border-2 border-purple-800" placeholder="0000 0000 0000 0000" />
+                                </div>
+                                <div className="flex flex-col">
+                                    <label htmlFor="card-name" className="text-lg mb-3">Cardholder Name:<span className="text-red-500 font-bold ml-2">*</span></label>
+                                    <TextField id="card-name" className="background py-2 px-4 rounded-md border-2 border-purple-800" placeholder="Jason Smith" />
+                                </div>
+                            </div>
+                            <div className="flex flex-row w-2/3">
+                                <div className="flex flex-col w-fit">
+                                    <label htmlFor="card-month" className="text-lg mb-3">Expiry Date:<span className="text-red-500 font-bold ml-2">*</span></label>
+                                    <TextField id="card-month" className="background py-2 px-4 rounded-md border-2 border-purple-800 w-36 mr-12" placeholder="MM/YYYY" />
+                                </div>
+                                <div className="flex flex-col w-fit">
+                                    <label htmlFor="card-cvv" className="text-lg mb-3">CVV/CVC:<span className="text-red-500 font-bold ml-2">*</span></label>
+                                    <TextField id="card-cvv" className="background py-2 px-4 rounded-md border-2 border-purple-800 w-24" placeholder="* * *" />
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 className="text-2xl font-semibold my-6">
+                                Billing Address
+                            </h3>
+                            <div className="flex flex-row items-center justify-between">
+                                <div className="flex flex-col w-2/3">
+                                    <label htmlFor="billing-s1" className="text-lg mb-3">Street Address:<span className="text-red-500 font-bold ml-2">*</span></label>
+                                    <TextField id="billing-s1" className="background py-2 px-4 rounded-md border-2 border-purple-800 mr-8" placeholder="Street address" />
+                                </div>
+                                <div className="flex flex-col w-1/2">
+                                    <label htmlFor="billing-apt" className="text-lg mb-3">Apartment/Suite No:<span className="text-red-500 font-bold ml-2">*</span></label>
+                                    <TextField id="billing-apt" className="background py-2 px-4 rounded-md border-2 border-purple-800 mr-8 w-1/2" placeholder="Flat no" />
+                                </div>
+                            </div>
+                            <div className="flex flex-row items-center justify-between w-11/12">
+                                <div className="flex flex-col my-4 w-fit">
+                                    <label htmlFor="billing-city" className="text-lg mb-3">City:<span className="text-red-500 font-bold ml-2">*</span></label>
+                                    <TextField id="billing-city" className="background py-2 px-4 rounded-md border-2 border-purple-800 mr-4" placeholder="City" />
+                                </div>
+                                <div className="flex flex-col my-4 w-fit">
+                                    <label htmlFor="billing-state" className="text-lg mb-3">State:<span className="text-red-500 font-bold ml-2">*</span></label>
+                                    <TextField id="billing-state" className="background py-2 px-4 rounded-md border-2 border-purple-800 w-11/12" placeholder="State" />
+                                </div>
+                                <div className="flex flex-col w-fit">
+                                    <label htmlFor="billing-zip" className="text-lg mb-3">ZIP Code:<span className="text-red-500 font-bold ml-2">*</span></label>
+                                    <TextField id="billing-zip" className="background py-2 px-4 rounded-md border-2 border-purple-800" placeholder="Zip Code" />
                                 </div>
                             </div>
                             
                         </div>
+                        <div className="my-6">
+                            <div className="w-fit">
+                                <CheckBox id="terms" name="terms" label={<>I agree to the <u className="font-semibold">Terms & Conditions</u> <span className="text-red-500 font-bold">*</span> </>} />
+                            </div>
+                            <div className="w-fit">
+                                <CheckBox id="refund" name="refund" label={<>I agree to the <u className="font-semibold">Refund Policy</u> <span className="text-red-500 font-bold">*</span> </>} />
+                            </div>
+                            <div className="w-fit">
+                                <CheckBox id="refund" name="refund" label={<>Remember my Payment Details for future purchases</>} />
+                            </div>
+                        </div>
+                        <Button className="payment-button flex flex-row items-center w-fit py-2 px-4 rounded-md my-4" icon={['fas', 'cart-plus']} label="Confirm Purchase" />
                     </form>
-                    
-                    <Button className="payment-button flex flex-row items-center w-fit py-2 px-4 rounded-md my-4" icon={['fas', 'cart-plus']} label="Confirm Purchase" />
                 </div>
                 <div className="flex flex-col w-5/12 h-2/3 pl-8">
                     <h3 className="text-2xl font-semibold py-2">Order Summary</h3>
@@ -88,13 +152,13 @@ export default function PaymentPage() {
                         <div className="w-1/5 text-right">Total:</div>
                         <div className="w-1/5 text-left indent-1.5"> <GenerateRandomPrice /> </div>
                     </div>
-                    <form className="flex flex-col w-fit">
+                    <div className="flex flex-col w-fit">
                         <label className="my-3">Enter Promo Code:</label>
                         <div className="flex flex-row items-center">
                             <TextField id="promo" className="background py-2 px-4 rounded-md border-2 border-pink-800 mr-4" placeholder="XYZ1234" />
                             <Button className="primary-button w-fit py-2 px-4 rounded-md" icon={['fas', 'tag']} label="Apply" />   
                         </div>
-                    </form>
+                    </div>
                     <div className="flex flex-col my-6">
                         <h3>Total Items &#40;  &#41; </h3>
                         {games.slice(0,2).map((game) => (
