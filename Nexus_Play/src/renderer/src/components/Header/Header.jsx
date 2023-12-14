@@ -1,4 +1,8 @@
 import Logo from '../../assets/Logo.png';
+import HomePage from '../HomePage/HomePage';
+import SpecialOffers from '../SpecialOffers/SpecialOffers';
+
+
 
 import HomePage from '../HomePage/HomePage';
 
@@ -12,6 +16,7 @@ export default function Header() {
     // Tailwind and CSS Class Declarations
 
     const navClass = 'm-0 py-4 px-10 background flex flex-row items-center justify-between sticky top-0';
+
 
     const logoClass = 'w-48';
 
