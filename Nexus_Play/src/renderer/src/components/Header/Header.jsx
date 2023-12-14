@@ -24,8 +24,8 @@ export default function Header() {
             <img className= { logoClass } src= { Logo } alt="Nexus Play logo" />
             <ul className={ navButtons }>
                 <li><Link href="/" className= { navItemClass }>Store</Link></li>
-                <li><Link href="/cart" className= { navItemClass }>Library</Link></li>
-                <li><Link href="/payments" className= { navItemClass }>Community</Link></li>
+                <li><Link href="/" className= { navItemClass }>Library</Link></li>
+                <li><Link href="/cart" className= { navItemClass }>Cart</Link></li>
                 <li><a className= { navItemClass }>Profile</a></li>
 
             </ul>
