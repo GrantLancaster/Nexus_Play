@@ -3,18 +3,17 @@ import Featured from "../Featured/Featured.jsx";
 import Header from "../Header/Header.jsx";
 import Categories from "../Categories/Categories.jsx";
 import SpecialOffers from "../SpecialOffers/SpecialOffers.jsx";
+import GamePage from "../gamePage/GamePage.jsx";
 // import SpecialOffers from "../SpecialOffers/SpecialOffers.jsx";
 
 
 export default function HomePage() {
     return (
         <div>
-            <Header />
             <div className='p-primary flex flex-row justify-center'>
                 <Categories />
                 <div className="m-0 p-0 w-full">
-                    <Featured className="h-featured"/>
-                    <SpecialOffers />
+                    <GamePage />
                 </div>
 
             </div>

@@ -10,7 +10,7 @@ const useFetchGames = () => {
       setLoading(true);
       setError(null);
       try {
-        const apiKey = "58cd0b7f651f43f39a9bc30c5994b3e3";
+        const apiKey = "4f53a2f7500d4d6ca560125abc539301";
         const url = `https://api.rawg.io/api/games?key=${apiKey}&dates=2023-06-2023-06-30`;
         const response = await fetch(url);
 
