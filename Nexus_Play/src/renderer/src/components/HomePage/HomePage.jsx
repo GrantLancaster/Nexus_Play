@@ -10,12 +10,14 @@ import GamePage from "../gamePage/GamePage.jsx";
 export default function HomePage() {
     return (
         <div>
-            <div className='p-primary flex flex-row justify-center'>
-                <Categories />
-                <div className="m-0 p-0 w-full">
-                    <GamePage />
-                </div>
 
+            <div className='p-primary flex flex-row justify-between'>
+                <Categories />
+                <div className="flex flex-col w-88">
+                    <Featured />
+                    <SpecialOffers />
+
+                </div>
             </div>
         </div>
     )
