@@ -1,5 +1,4 @@
 import Logo from '../../assets/Logo.png';
-import HomePage from '../HomePage/HomePage';
 import SpecialOffers from '../SpecialOffers/SpecialOffers';
 
 
@@ -32,7 +31,6 @@ export default function Header() {
                 <li><Link href="/" className= { navItemClass }>Library</Link></li>
                 <li><Link href="/cart" className= { navItemClass }>Cart</Link></li>
                 <li><a className= { navItemClass }>Profile</a></li>
-
             </ul>
             <div className="invisible">Pseudo div</div>
         </nav>

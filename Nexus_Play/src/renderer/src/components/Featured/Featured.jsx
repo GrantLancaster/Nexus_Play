@@ -12,6 +12,8 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faMoneyBill } from "@fortawesome/free-solid-svg-icons";
 
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'wouter';
+
 
 library.add(faMoneyBill, faCartShopping);
 
@@ -45,7 +47,7 @@ export default function Featured() {
                                 <Offertag />
                             </div>
                         </div>
-                        <Button label="Buy Now" className="primary-button py-3 px-4 rounded-md flex flex-row items-center text-2xl font-medium" icon="cart-shopping" />
+                            <Button label="Buy Now" className="primary-button py-3 px-4 rounded-md flex flex-row items-center text-2xl font-medium" icon="cart-shopping" navigation={"/gamepage"} />
                     </div>
                 </div>
             )}

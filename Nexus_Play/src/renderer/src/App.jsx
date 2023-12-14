@@ -16,7 +16,7 @@ import { useState } from "react";
 import CartPage from "./components/CartPage/CartPage.jsx";
 import PaymentPage from "./components/PaymentPage/PaymentPage.jsx";
 import SuccessPage from "./components/SuccessPage/SuccessPage.jsx";
-
+import GamePage from "./components/gamePage/GamePage.jsx";
 
 
 export default function App() {
@@ -33,6 +33,7 @@ export default function App() {
         <Route path="/cart" component={CartPage} />
         <Route path="/payments" component={PaymentPage} />
         <Route path="/paymentSuccess" component={SuccessPage} />
+        <Route path="/gamepage" component={GamePage} />
       </Switch>
 
     </>

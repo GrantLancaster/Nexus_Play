@@ -11,7 +11,7 @@ export default function SpecialOffers() {
     return (
         <div className="specialOfferParent">
             {games.length > 0 && (
-                <div key={games[5].id}>
+                <div key={games[5].id} className="w-full flex">
                 <div className="game" style={{ backgroundImage: `url(${games[3].background_image})` }}>
                     <div className="overlaySale">
                         <h4>{games[3].name}</h4>

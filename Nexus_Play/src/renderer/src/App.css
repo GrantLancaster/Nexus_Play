@@ -133,6 +133,9 @@ width: 300px;
 
 /* GamePage Styles */
 
+.gamePageParent {
+    margin: 3rem;
+}
 .gameTitle {
     color: white;
     font-size: 36pt;
@@ -157,6 +160,7 @@ width: 300px;
         "c d";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 500px 500px;
+    column-gap: 3rem;;
     row-gap: 12rem;
 }
 .reviewParent {
@@ -181,6 +185,7 @@ width: 300px;
 .titleImage {
     width: 100%;
     border-radius: 0.5rem;
+    object-fit: cover;
 }
 .carousel {
     overflow-x: scroll;
@@ -224,7 +229,13 @@ width: 300px;
 .details {
     display: flex;
     gap: 1rem;
-
+}
+.profilePic {
+    height: 50px;
+    width: auto;
+    border-radius: 100%;
+    margin: 0.5rem;
+}
 /* Cart Page */
 
 .cart-image {
@@ -241,4 +252,75 @@ width: 200px;
 
 .w-88 {
 
+}
+
+/* Special Features */
+.specialOfferParent {
+    display: flex;
+    width: 90%;
+    margin: 1rem 0;
+    height: 480px;
+}
+.game {
+    position: relative;
+    height: 60%;
+    width: 100%;
+    margin: 0.5rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.gameSmall {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tileOverlay {
+    border: 2px solid white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.tileOverlay article {
+    float: right;
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+.tileOverlay button {
+    position: absolute;
+    right: 0.5em;
+    bottom: 33%;
+}
+.overlaySale {
+    background: linear-gradient(0deg, rgba(0,0,0,.80) 80%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 15% 0.5em 0.5em 0.5em;
+}
+.overlaySale h4 {
+    margin: 0.25rem 0 0.25rem 0;
+}
+.overlaySale h4, .overlaySale p {
+    color: white;
+    font-weight: bold;
+}
+.overlaySale article {
+    float: right;
+    position: absolute;
+    bottom: 1rem;;
+    right: 1rem;
+    color: white;
+}
+img {
+    width: 100%;
+    height: 100%;
 }
