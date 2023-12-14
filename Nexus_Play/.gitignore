@@ -1,4 +1,5 @@
 node_modules
 dist
-out
+make
+nexus-play-win32-x64
 *.log*

@@ -41,7 +41,7 @@ export default function PaymentPage() {
     }
 
     return(
-        <div className="text-white px-72 py-6">
+        <div className="text-white px-20 py-6">
             <div className="w-full background px-6 py-4 rounded-lg text-secondary">
                 Store &gt; Multiplayer Games &gt; Cart &gt; Payment Details
             </div>

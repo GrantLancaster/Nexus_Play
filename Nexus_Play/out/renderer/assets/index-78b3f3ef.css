@@ -1,4 +1,509 @@
-/*
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+--primary-color: #B191FF;
+--secondary-color: #FF4081;
+--background-color: #1c1c1c;
+--wishlist-color: #2350C3;
+--remove-color: #C02323;
+--payment-color: #59C305;
+
+}
+
+html {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+body {
+background-image: url("./background-966795f2.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+width: 100%;
+height: 100vh;
+}
+
+.overlay {
+background-color: #00000099;
+width: 100%;
+height: 100%;
+padding: 0;
+margin: 0;
+z-index: -1;
+border: none;
+position: fixed;
+}
+
+.feature-main {
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.p-primary {
+width: 100%;
+padding: 2em;
+}
+
+.line-clamp-3 {
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+}
+
+.background {
+    background-color: var(--background-color);
+}
+
+.primary-background {
+    background-color: var(--primary-color);
+}
+
+.secondary-background {
+    background-color: var(--secondary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+/* Features Component */
+
+.h-featured {
+width: 100%;
+height: 480px;
+}
+
+
+/* Categories Component */
+.categoryParent {
+color: lightgray;
+padding: 0 1rem 0 0;
+}
+ul{
+padding: 0.5em 0 0.5em 0;
+}
+ul h4 {
+font-weight: bold;
+}
+li {
+    margin-left: 1em;
+    width: fit-content;
+    color: var(--primary-color);
+    margin: 0;
+}
+li:hover {
+color: var(--secondary-color);
+
+}
+.grid-image {
+width: 300px;
+}
+
+/* Buttons */
+
+.primary-button {
+    background-color: var(--primary-color);
+}
+
+.secondary-button {
+    background-color: var(--secondary-color);
+}
+
+.wishlist-button {
+    background-color: var(--wishlist-color);
+}
+
+.remove-button {
+    background-color: var(--remove-color);
+}
+
+.payment-button {
+    background-color: var(--payment-color);
+}
+
+
+/* GamePage Styles */
+
+.gamePageParent {
+    margin: 3rem;
+}
+.gameTitle {
+    color: white;
+    font-size: 36pt;
+}
+.gameImages {
+    grid-area: "a";
+}
+.asideBar {
+    grid-area: "b";
+}
+.reviewParent {
+    grid-area: "c";
+    margin-bottom: 5rem;
+}
+.platformParents {
+    grid-area: "d";
+}
+.topBox {
+    display: grid;
+    grid-template-areas:
+        "a b"
+        "c d";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 500px;
+    column-gap: 3rem;;
+    row-gap: 12rem;
+}
+.reviewParent {
+    grid-area: "c";
+}
+.justForScroll {
+    overflow-y: scroll;
+
+    height: 100%;
+}
+.reviewBox {
+    margin: 0.5rem;
+    background-color: #1c1c1c;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+.reviewTitle {
+    color: #B191FF;
+    font-size: 24pt;
+    text-align: center;
+}
+.titleImage {
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+.carousel {
+    overflow-x: scroll;
+    background-color: #1c1c1c;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+}
+.carouselImage {
+    width: 150px;
+    height: auto;
+    border-radius: 0.375rem;
+    margin: 0.375rem;  
+}
+.gameInformation {
+    overflow-y: scroll;
+    height: 100%;
+    margin: 1rem 0 1rem 0;
+}
+.infoButtons {
+    bottom: 0;
+    display: flex;
+    align-items: end;
+}
+.platform {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #1c1c1c;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+.logos {
+    height: 3rem;
+    width: auto;
+}
+.platformButtons {
+    background-color: #B191FF;
+}
+.details {
+    display: flex;
+    gap: 1rem;
+}
+.profilePic {
+    height: 50px;
+    width: auto;
+    border-radius: 100%;
+    margin: 0.5rem;
+}
+/* Cart Page */
+
+.cart-image {
+width: 200px;
+}
+
+/* Paymennt Page */
+
+.payment-image {
+    width: 150px;
+}
+
+/* Custom Widths */
+
+.w-88 {
+
+}
+
+/* Special Features */
+.specialOfferParent {
+    display: flex;
+    width: 90%;
+    margin: 1rem 0;
+    height: 480px;
+}
+.game {
+    position: relative;
+    height: 60%;
+    width: 100%;
+    margin: 0.5rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.gameSmall {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tileOverlay {
+    border: 2px solid white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.tileOverlay article {
+    float: right;
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+.tileOverlay button {
+    position: absolute;
+    right: 0.5em;
+    bottom: 33%;
+}
+.overlaySale {
+    background: linear-gradient(0deg, rgba(0,0,0,.80) 80%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 15% 0.5em 0.5em 0.5em;
+}
+.overlaySale h4 {
+    margin: 0.25rem 0 0.25rem 0;
+}
+.overlaySale h4, .overlaySale p {
+    color: white;
+    font-weight: bold;
+}
+.overlaySale article {
+    float: right;
+    position: absolute;
+    bottom: 1rem;;
+    right: 1rem;
+    color: white;
+}
+img {
+    width: 100%;
+    height: 100%;
+}.specialOfferParent {
+    display: flex;
+    width: 90%;
+    margin: 1rem 0;
+    height: 480px;
+}
+.game {
+    position: relative;
+    height: 60%;
+    width: 100%;
+    margin: 0.5rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.gameSmall {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    border-radius: 0.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tileOverlay {
+    border: 2px solid white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.tileOverlay article {
+    float: right;
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+.tileOverlay button {
+    position: absolute;
+    right: 0.5em;
+    bottom: 33%;
+}
+.overlaySale {
+    background: linear-gradient(0deg, rgba(0,0,0,.80) 80%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 15% 0.5em 0.5em 0.5em;
+}
+.overlaySale h4 {
+    margin: 0.25rem 0 0.25rem 0;
+}
+.overlaySale h4, .overlaySale p {
+    color: white;
+    font-weight: bold;
+}
+.overlaySale article {
+    float: right;
+    position: absolute;
+    bottom: 1rem;;
+    right: 1rem;
+    color: white;
+}
+img {
+    width: 100%;
+    height: 100%;
+}.homeParent {
+    border: 2px solid magenta;
+    flex-grow: 9;
+    padding: 0.5em 1em 0.5em 1em;
+}.categoryParent {
+    color: lightgray;
+}
+.listParent {
+    padding: 0.5em 0 0.5em 0;
+}
+.listParent h4 {
+    font-weight: bold;
+}
+li {
+    width: fit-content;
+    color: var(--primaryColor);
+
+}
+li:hover {
+    color: var(--secondaryColor);
+}
+.gameTitle {
+    color: white;
+    font-size: 36pt;
+}
+.gameImages {
+    grid-area: "a";
+}
+.asideBar {
+    grid-area: "b";
+}
+.reviewParent {
+    grid-area: "c";
+    margin-bottom: 5rem;
+}
+.platformParents {
+    grid-area: "d";
+}
+.topBox {
+    display: grid;
+    grid-template-areas:
+        "a b"
+        "c d";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 500px;
+    row-gap: 12rem;
+}
+.reviewParent {
+    grid-area: "c";
+}
+.justForScroll {
+    overflow-y: scroll;
+
+    height: 100%;
+}
+.reviewBox {
+    margin: 0.5rem;
+    background-color: #1c1c1c;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+.reviewTitle {
+    color: #B191FF;
+    font-size: 24pt;
+    text-align: center;
+}
+.titleImage {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.carousel {
+    overflow-x: scroll;
+    background-color: #1c1c1c;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+}
+.carouselImage {
+    width: 150px;
+    height: auto;
+    border-radius: 0.375rem;
+    margin: 0.375rem;  
+}
+.gameInformation {
+    overflow-y: scroll;
+    height: 100%;
+    margin: 1rem 0 1rem 0;
+}
+.infoButtons {
+    bottom: 0;
+    display: flex;
+    align-items: end;
+}
+.platform {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #1c1c1c;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+.logos {
+    height: 3rem;
+    width: auto;
+}
+.platformButtons {
+    background-color: #B191FF;
+}
+.details {
+    display: flex;
+    gap: 1rem;
+}/*
 ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
 */
 
@@ -956,11 +1461,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
 .pl-8 {
   padding-left: 2rem;
 }
@@ -1092,7 +1592,7 @@ html {
 }
 
 body {
-  background-image: url("./assets/background.png");
+  background-image: url("./background-966795f2.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

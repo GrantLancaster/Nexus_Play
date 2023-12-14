@@ -37,7 +37,7 @@ export default function CartPage() {
     }
 
     return(
-        <div className="text-white px-72 py-6">
+        <div className="text-white px-20 py-6">
             {loading && <p>Loading...</p>}
             {error && <p>{error}</p>}
 
