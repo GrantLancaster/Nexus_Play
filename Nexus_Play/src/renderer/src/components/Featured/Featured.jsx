@@ -2,7 +2,7 @@ import "./Featured.css";
 
 import useFetchGames from "../../Api";
 
-import { Offertag, GenerateRandomPrice, Ratingtag } from "../Tags/tags";
+import { Offertag, GenerateRandomPrice, Ratingtag } from "../Tags/Tags.jsx";
 
 import { Button } from "../Button";
 
