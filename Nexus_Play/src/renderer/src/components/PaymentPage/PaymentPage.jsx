@@ -31,7 +31,7 @@ export default function PaymentPage() {
     const { games, loading, error } = useFetchGames();
 
     function RandomTax() {
-
+        //Ignore this comment
         const taxInput =  Math.random() * (20 - 10) + 10;
         return (
             <>
