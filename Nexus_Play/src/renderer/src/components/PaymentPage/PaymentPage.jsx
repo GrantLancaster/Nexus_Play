@@ -2,7 +2,7 @@ import useFetchGames from "../../Api";
 
 import { Button } from "../Button";
 
-import { GenerateRandomPrice, Ratingtag, StrikedPrice } from "../Tags/tags";
+import { GenerateRandomPrice, Ratingtag, StrikedPrice } from "../Tags/Tags.jsx";
 
 import { TextField, DropDown, CheckBox } from "../InputFields/InputFields";
 
