@@ -2,7 +2,7 @@ import "./GamePage.css";
 
 import {Button} from "../Button.jsx";
 import useFetchGames from "../../Api.jsx";
-import { Offertag, GenerateRandomPrice, Ratingtag } from "../Tags/tags";
+import { Offertag, GenerateRandomPrice, Ratingtag } from "../Tags/Tags.jsx";
 
 import steam from "../../assets/steam-logo.png";
 import epic from "../../assets/Ubisoft-logo.png";
