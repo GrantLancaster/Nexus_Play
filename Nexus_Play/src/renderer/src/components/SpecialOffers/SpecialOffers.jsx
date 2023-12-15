@@ -1,7 +1,6 @@
 import "./SpecialOffers.css";
-import pic from "../../assets/horizonForbiddenWest.jpg";
 import useFetchGames from "../../Api.jsx";
-import { Offertag, GenerateRandomPrice, Ratingtag } from "../Tags/tags";
+import { Offertag, GenerateRandomPrice, Ratingtag } from "../Tags/Tags.jsx";
 
 
 
